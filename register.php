@@ -24,7 +24,7 @@
                 <input type="text" name="username" id="username" placeholder="Введите имя"><br>
                 <button class="btn_reg" type="submit">Регистрация</button>
                 <p>
-                    У вас есть аккаунт? - <a href="index.html">Авторизируйтесь</a>!
+                    У вас есть аккаунт? - <a href="index.php">Авторизируйтесь</a>!
                 </p>
             </form> 
         </div>
