@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(../img/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Montserrat;
+    color: white;
+}
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+    .page {
+        height: 50vh;
+        margin: 25% 100px;
+        display: block;
+    }
+}
+@media screen and (max-width: 567px) {
+    .page {
+        height: 50vh;
+        margin: 35% 10px;
+        display: block;
+    }
+}
+.page h1 {
+    margin: 0 50px;
+}
+@media screen and (max-width: 767px) {
+    .page h1{
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+}
+form {
+    margin: 0 50px;
+    padding:  50px 40px;
+    background-color: rgba(255, 255, 255, 0.265);
+}
+@media screen and (max-width: 567px) {
+    form {
+        margin: 0 30px;
+        padding:  40px 30px;
+    }
+}
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border: unset;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    justify-content: center;
+    color: white;
+    font-family: Montserrat;
+}
+form input::-webkit-input-placeholder {
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: Montserrat;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.265);
+    transition: all 0.3s ease-in;
+}
+form a {
+    color: white;
+}
+form a:hover {
+    color: rgb(255, 0, 111);
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+@media screen and (max-width: 767px) {
+    form p, form a {
+        text-align: center;
+    }
+}
