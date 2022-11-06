@@ -21,14 +21,14 @@ body {
 @media screen and (max-width: 767px) {
     .page {
         height: 50vh;
-        margin: 25% 100px;
+        margin: 20% 50px;
         display: block;
     }
 }
 @media screen and (max-width: 567px) {
     .page {
         height: 50vh;
-        margin: 35% 10px;
+        margin: 25% 10px;
         display: block;
     }
 }
@@ -83,7 +83,8 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.265);
     transition: all 0.3s ease-in;
 }
-form a {
+form a, form p{
+    text-align: center;
     color: white;
 }
 form a:hover {
@@ -91,8 +92,14 @@ form a:hover {
     text-decoration: none;
     transition: all 0.3s ease-in;
 }
-@media screen and (max-width: 767px) {
-    form p, form a {
-        text-align: center;
-    }
+.msg {
+    width: 300px;
+    color: red;
+    margin: 5px 0;
+} 
+.none {
+    display: none;
+}
+.error {
+    border-bottom: 2px solid red;
 }
