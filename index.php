@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if ($_SESSION['user'])
+    {
+        header('Location: profile.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -17,7 +25,11 @@
             <p>
                 У вас нет аккаунта? - <a href="register.php">Зарегистрируйтесь!</a>
             </p>
-            </form>
-    </div>
+            <p class="msg none"></p>
+        </form> 
+    </div>    
+
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
